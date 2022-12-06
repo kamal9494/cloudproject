@@ -16,21 +16,21 @@ import { Amplify } from 'aws-amplify';
 
 Amplify.configure({
   Auth: {
-    identityPoolId: 'ap-northeast-1:08ad07c8-0b2c-4bd7-aad8-40bd172b0c01',
-    region: 'ap-northeast-1'
+    identityPoolId: '[Enter Identity Pool ID here]',
+    region: '[Enter Region here]'
   },
   Interactions: {
     bots: {
-      LexAcademic_dev: {
-        name: 'LexAcademic_dev',
+      [Enter Bot Name here]: {
+        name: '[Enter Bot Name here]',
         alias: '$LATEST',
-        region: 'ap-northeast-1'
+        region: '[Enter Region here]'
       }
     }
   }
 });
 
-const botName = 'LexAcademic_dev';
+const botName = '[Enter Bot Name here]';
 const botUser = {
   _id: 2,
   name: 'Bot',
